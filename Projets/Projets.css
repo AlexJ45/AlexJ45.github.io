@@ -1,0 +1,131 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust:100%;
+    height: 100%;
+}
+
+body{          /* Contient tout */  
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+}
+
+#bandeau{          /* Contient le haut de la page */
+    display: flex;
+    width: 100%;
+    margin: 0;
+    z-index:1;
+    position: sticky; top: 0;
+}
+
+#t1{
+    display: flex;
+    z-index:2;
+    position: absolute; top: 0;
+    padding-left: 10%;
+    padding-top: 2%;
+    color: whitesmoke;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+#present{          /* Contient la présentation */  
+    display: flex;
+    flex-direction: row;
+    z-index:2;
+    width: 100%;
+    align-content: space-between;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    z-index:3;
+    max-width: 50%;
+    padding: 3%;
+}
+
+#part1{
+    align-content: space-around;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    max-height: 50%;
+    width: 100%;
+
+}
+
+#part2{
+    align-content: space-around;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    max-height: 50%;
+    width: 100%;
+}
+
+#projets{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 3%;
+    z-index:3;
+    max-width: 50%;
+}
+
+#part3{
+    align-content: space-around;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    max-height: 50%;
+    width: 100%;
+}
+
+#p3{
+    display: flex;
+    flex-direction: row;
+}
+
+#part4{
+    align-content: space-around;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    max-height: 50%;
+    width: 100%;
+}
+
+.img{
+    max-width: 100px;
+    max-height: 90px;
+}
+
+.para{
+    text-align: justify;
+    max-width: 65%;
+    font-size:13px;
+    align-content: space-around;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.titre{
+    text-align: center;
+    white-space: nowrap;
+    max-width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#bandeau_bas{          /* Contient le bas de la page */
+    display: flex;
+    width: 100%;
+    margin: 0;
+    z-index:1;
+    position: sticky; bottom: 0;
+}

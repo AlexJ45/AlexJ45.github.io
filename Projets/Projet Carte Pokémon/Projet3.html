@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Projet 3 : Groupe 9</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='Projet3.css'>
+        <script src='Projet3.js' defer="defer"></script>
+    </head>
+    <body>
+        <div id="ball">
+            <img src="Images/bandeau_pokeball.png" id="pokeball"> <!--Ici nous mettons une image comme haut page, pour annoncer le thème de celle ci sans titre-->
+        </div> 
+        <div id="corps">
+
+            <div id="formulaire"> <!-- Cette division seras réservé à la partie gauche de la page -->
+                <div id="part1">
+                    <div id="n1">
+                        <form>
+                            <p>Nom :
+                                <input type="text" name="nomPerso" id="nomPerso" oninput="nom()" maxlength="12"></input>
+                            </p>
+                        </form>
+                        <label for="type">Choisissez le type :</label>
+                        <select name="type" id="type" onchange="choix()">
+                          <option value="base">--Choix--</option>
+                          <option value="eau">Eau</option>
+                          <option value="feu">Feu</option>
+                          <option value="plante">Plante</option>
+                          <option value="acier">Acier</option>
+                          <option value="combat">Combat</option>
+                          <option value="dragon">Dragon</option>
+                          <option value="electrique">Electrique</option>
+                          <option value="fee">Fée</option>
+                          <option value="glace">Glace</option>
+                          <option value="normal">Normal</option>
+                          <option value="insecte">Insecte</option>
+                          <option value="poison">Poison</option>
+                          <option value="psy">Psy</option>
+                          <option value="roche">Roche</option>
+                          <option value="sol">Sol</option>
+                          <option value="spectre">Spectre</option>
+                          <option value="tenebre">Ténèbre</option>
+                          <option value="vol">Vol</option>
+                        </select>
+                    </div>
+                    <div id="n2">
+                        <form>
+                            <p>PV :
+                                <input type="text" name="pv" id="pv" oninput="choixpv()" maxlength="3"></input>
+                            </p>
+                            <div id="C1">
+                                <p>Nom Capacité 1:
+                                    <input type="text" name="nom_c1" id="nom_c1" oninput="capa1_nom()" maxlength="15"></input>
+                                </p>
+                                <p>Dégats Capicité 1:
+                                    <input type="text" name="degat_c1" id="degat_c1" oninput="capa1_deg()"  maxlength="3"></input>
+                                </p>
+                            </div>
+                            <div id="C2">
+                                <p>Nom Capacité 2:
+                                    <input type="text" name="nom_c2" id="nom_c2" oninput="capa2_nom()" maxlength="15"></input>
+                                </p>
+                                <p>Dégats Capicité 2:
+                                    <input type="text" name="degat_c2" id="degat_c2" oninput="capa2_deg()"  maxlength="3"></input>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="part2">
+                    <label for="chpt_img">Choisissez l'image :</label>
+                        <select name="chpt_img" id="chpt_img" onchange="change_image()">
+                            <option value="rien">--Choix--</option>
+                            <option value="donna">Donna</option>
+                            <option value="kabu">Kabu</option>
+                            <option value="percy">Percy</option>
+                            <option value="ball">Ball Masquée</option>
+                            <option value="tarak">Tarak</option>
+                            <option value="alistair">Alistair</option>
+                            <option value="chaz">Chaz</option>
+                            <option value="faiza">Faiza</option>
+                            <option value="lona">Lona</option>
+                            <option value="peterson">Peterson</option>
+                            <option value="nabil">Nabil</option>
+                            <option value="rosemary">Rosemary</option>
+                            <option value="roy">Roy</option>
+                            <option value="sally">Sally</option>
+                            <option value="shehroz">Shehroz</option>
+                            <option value="travis">Travis</option>
+                        </select>
+                </div>
+                <div id="part3">
+
+                </div>
+            </div>
+
+            <div id="carte"> <!-- Cette division seras réservé à la partie droite de la page -->
+                <div id="rendu">
+                    <p class ="carteText" id="célayalenom"></p>
+                    <p class ="cartePV" id="PV"></p>
+                    <p class ="célépv" id="célépv" style="visibility: hidden;">pv</p>
+                    <p class ="carteCap1" id="Cap1"></p>
+                    <p class ="carteCap2" id="Cap2"></p>
+                    <p class ="carteDeg1" id="Deg1"></p>
+                    <p class ="carteDeg2" id="Deg2"></p>
+                    <img class = "cartePerso" id ="img" src="Images/kabu.png" style="visibility: hidden;" alt="kabu" width = "263" height="172">
+                    <img id ="image" src = "Images/fond_eau.png"  style = "visibility: hidden" alt = "PhotoID">
+                </div>
+                <div id="credits">
+                    <ul>
+                        Crédits :
+                        <li>
+                            © 2020 Nintendo.
+                        </li>
+                        <li>
+                            © 2020 Pokémon. TM, ® Nintendo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

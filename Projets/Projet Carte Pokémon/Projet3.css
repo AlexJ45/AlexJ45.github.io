@@ -1,0 +1,158 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust:100%;
+    height: 100%;
+}
+
+body{          /* Contient tout */  
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 28, 36);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#ball{          /* Contient pokeball */
+    display: flex;
+    justify-content: center;
+}
+
+#pokeball{   /* Bandeau */
+    width: 100%;
+}
+
+#corps{          /* Contient formulaire et rendu */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+#formulaire{          /* Contient part1, 2 et 3 */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#part1{   /* Formulaire */
+    display: flex;
+    flex-direction: row;
+}
+
+#n1{    /* Nom et choix du type*/
+    display: flex;
+    width: 50%;
+	height: 100%;
+    float: left;
+    flex-direction: column;
+}
+
+#type{
+    width: 50%;
+}
+
+#n2{    /*Pv et cap*/
+    display: flex;
+    width: 50%;
+	height: 100%;
+    float: left;
+    flex-direction: column;
+}
+
+#part2{   /* Image */
+    display: flex;
+    flex-direction: row;
+}
+
+#part3{   /* Rareté */
+    display: flex;
+    flex-direction: row;
+}
+
+#carte{          /* Contient rendu et credits */
+    display: flex;
+    width: 100%;
+	height: 100%;
+    float: left;
+    flex-direction: column;
+}
+
+#rendu{   /* Rendu en temps réel de la carte */
+    display: flex;
+    padding: 10px;
+    flex-direction: row-reverse ;
+    justify-content: center;
+}
+
+#credits{   /* Liens et crédits */
+    align-items: flex-end;
+    display: flex;
+    padding-left: 700px;
+}
+
+body{
+    width:100%;
+    height:100%;
+}
+
+#image{
+    z-index: 2;
+}
+
+.cartePerso{
+    position: absolute;
+    z-index:1;
+    padding-top: 50px;
+}
+
+.carteText{
+    position: absolute;
+    z-index:3;
+    padding-top: 2px;
+    padding-right: 42px;
+}
+
+.célépv{
+    position: absolute;
+    z-index:3;
+    padding-top: 2px;
+    padding-left: 250px;
+}
+
+.cartePV{
+    position: absolute;
+    z-index:3;
+    padding-top: 2px;
+    padding-left: 200px;
+}
+
+.carteCap1{
+    position: absolute;
+    z-index: 3;
+    padding-right: 30px;
+    padding-top: 257px;
+}
+
+.carteDeg1{
+    position: absolute;
+    z-index: 3;
+    padding-top: 257px;
+    padding-left: 220px;
+}
+
+.carteCap2{
+    position: absolute;
+    z-index: 3;
+    padding-right: 30px;
+    padding-top: 300px;
+}
+
+.carteDeg2{
+    position: absolute;
+    z-index: 3;
+    padding-left: 220px;
+    padding-top: 300px;
+}
